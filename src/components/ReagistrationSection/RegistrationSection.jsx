@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { registerUser } from '../../facaBackend'
 import './RegistrationSection.css'
 
@@ -119,9 +120,9 @@ const RegistrationSection = () => {
 					onChange={e => setConfirmPassword(e.target.value)}
 				/>
 
-				<button type='submit' className='registration-btn'>
+				<Link to={'/chat'} type='submit' className='registration-btn'>
 					Registration
-				</button>
+				</Link>
 			</form>
 		</div>
 	)

@@ -31,7 +31,7 @@ label {
 	outline: none;
 }
 
-.form button {
+.form a {
 	background-color: transparent;
 	color: #fff;
 	border: 1px solid #838282;

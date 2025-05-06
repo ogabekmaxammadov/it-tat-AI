@@ -12,7 +12,7 @@ bot.start(ctx => {
 					{
 						text: 'Web App ochish',
 						web_app: {
-							url: 'https://dainty-smakager-d9f0a1.netlify.app/',
+							url: 'https://ubiquitous-sundae-3e260a.netlify.app/',
 						},
 					},
 				],

@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Poppins, 'sans-serif';
+	background-color: black;
+}
+
+.container {
+	max-width: 800px;
+	height: 100vh;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	align-items: center;
+	border-bottom: 1px solid #646262;
+}
+
+.header h1 {
+	color: #fff;
+}
+
+.header h3 {
+	padding: 7px 13px;
+	background-color: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.message-input {
+	border: 0.5px solid #fff;
+	margin-top: 85vh;
+	height: 70px;
+	width: 700px;
+	margin-left: 50px;
+	border-radius: 20px;
+	background-color: rgb(54, 50, 50);
+	display: flex;
+	align-items: center;
+	position: fixed;
+	z-index: 30;
+	padding-right: 15px;
+}
+
+.message-input input {
+	width: 80%;
+	height: 40%;
+	background-color: transparent;
+	color: black;
+	margin-left: 3%;
+	margin-top: 10px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 0.5px solid #757474;
+	color: #fff;
+	font-size: 18px;
+}
+
+.message-input input:focus {
+	outline: none;
+}
+
+.send-btn {
+	padding: 10px 20px;
+	margin-left: 5px;
+	border-radius: 30px;
+	background-color: #fff;
+	color: black;
+	cursor: pointer;
+	border: none;
+}
+
+.message-earea {
+	height: auto;
+	overflow-y: scroll;
+	padding-bottom: 100px;
+}
+
+.message-earea::-webkit-scrollbar {
+	display: none;
+}
+
+.message {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	height: auto;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: 5%;
+	background-color: rgb(54, 50, 50);
+	border: 1px solid #646262;
+	margin-top: 30px;
+	color: #fff;
+}
+
+.user-message {
+	margin-left: 25%;
+	border-top-right-radius: 40px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.bot-message {
+	margin-left: 5%;
+	padding: 10px;
+	background-color: rgb(34, 34, 34);
+	color: white;
+	margin-top: 10px;
+	border-top-left-radius: 70px;
+	padding: 20px 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+
+	.message-input {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.message-input {
+		margin-top: 88vh;
+	}
+}

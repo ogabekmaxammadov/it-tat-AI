@@ -12,7 +12,7 @@ bot.start(ctx => {
 					{
 						text: 'Web App ochish',
 						web_app: {
-							url: 'https://ubiquitous-sundae-3e260a.netlify.app/',
+							url: 'https://it-tat-ai.vercel.app/',
 						},
 					},
 				],
